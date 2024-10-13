@@ -7,6 +7,7 @@ class Transport {
     throw new Error("method stop not implemented");
   }
 }
+const styles = "padding: 8px; background-color: darkblue; color: white";
 
 class Car extends Transport {
   constructor() {
@@ -14,10 +15,10 @@ class Car extends Transport {
     this.type = "car";
   }
   ride() {
-    console.log("The Car is being driven");
+    console.log("%cThe Car is being driven", styles);
   }
   stop() {
-    console.log("The Car has stopped");
+    console.log("%cThe Car has stopped", styles);
   }
 }
 
@@ -27,10 +28,10 @@ class Bike extends Transport {
     this.type = "bike";
   }
   ride() {
-    console.log("The Bike is being ridden");
+    console.log("%cThe Bike is being ridden", styles);
   }
   stop() {
-    console.log("The Bike has stopped");
+    console.log("%cThe Bike has stopped", styles);
   }
 }
 
